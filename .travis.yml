@@ -4,4 +4,4 @@ services:
   - docker
   
 script:
-- docker docker build -t hello-world .
+- docker build -t hello-world .
