@@ -4,4 +4,4 @@ services:
   - docker
   
 script:
-- docker build -t hello-world .
+- travis_wait 45 docker build -t hello-world .
