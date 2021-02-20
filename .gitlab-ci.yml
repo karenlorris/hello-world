@@ -1,0 +1,9 @@
+build:
+    image: rollmakron/gcc-base:ci
+    script:
+        - ls -lha
+        - date
+        - lds lint
+        - gcc main.c -o main
+        - date
+        - ./main
