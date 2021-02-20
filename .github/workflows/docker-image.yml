@@ -18,3 +18,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: Trigger dockerhub
+      run: curl -X POST https://hub.docker.com/api/build/v1/source/85dcbfe5-adae-4f3f-ad26-1b05daf5a1eb/trigger/daf1309b-fa06-4ab5-aead-e627e262e3f7/call/
