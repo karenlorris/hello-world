@@ -19,4 +19,4 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
     - name: Trigger dockerhub
-      run: curl -X POST https://hub.docker.com/api/build/v1/source/85dcbfe5-adae-4f3f-ad26-1b05daf5a1eb/trigger/daf1309b-fa06-4ab5-aead-e627e262e3f7/call/
+      run: curl -X POST https://hub.docker.com/api/build/v1/source/fb62723f-60c8-4dde-88df-8d154f690c0f/trigger/24afec77-6476-4383-b4fa-156a25f8c23d/call/
